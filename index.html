@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tmt website</title>
+    <title>tmt</title>
 
     <link rel="stylesheet" href="bootstrap.css">
 
     <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="animate.css">
+
 </head>
 <body>
 
@@ -39,14 +42,14 @@
     </header>
 
     <!-- header-carousel -->
-    <div class="header-carousel carousel slide" data-ride="carousel" id="header-carousel">
+    <div class="header-carousel carousel slide" data-bs-ride="carousel" id="header-carousel">
 		<div class="header-carousel-indicators carousel-indicators">
-			<button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			<button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active carousel-indicators-dots" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" class="carousel-indicators-dots" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" class="carousel-indicators-dots" aria-label="Slide 3"></button>
 		</div>
 		<div class="carousel-inner">
-			<div class="carousel-item active">
+			<div class="carousel-item active" >
 				<img alt="First slide" class="d-block" src="img/header_1.jpg">
 			</div>
 			<div class="carousel-item">
@@ -61,11 +64,11 @@
     <!-- main1 -->
     <div class="container main1">
         <div class="shadow">
-            <div class="main1-carousel carousel slide" data-ride="carousel" id="main1-carousel">
+            <div class="main1-carousel carousel slide" data-bs-ride="carousel" id="main1-carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#main1-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#main1-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#main1-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#main1-carousel" data-bs-slide-to="0" class="active carousel-indicators-dots" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#main1-carousel" data-bs-slide-to="1" class="carousel-indicators-dots" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#main1-carousel" data-bs-slide-to="2" class="carousel-indicators-dots" aria-label="Slide 3"></button>
                 </div>
                 <div class="main1-carousel-inner carousel-inner">
                     <div class="main1-carousel-item carousel-item active">
@@ -104,20 +107,49 @@
     </div>
 
     <!-- main2 -->
-    <div class="container main2">
-        <div class="shadow">
-            <h4 class="main2-text">
-                ВЫБИРАЙ<br>
-                И УЗНАВАЙ
-            </h4>
-            <div class="main2-img">
-                <div class="main2-1">
-                    <img src="img/main2_1.jpg" alt="">
-                </div>
-                <div class="main2-2">
-                    <img src="img/main2_2.jpg" alt="">
+    <div class="main2">
+        <div class="main2-icons-left wow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#fbd42c" class="bi bi-balloon" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 9.984C10.403 9.506 12 7.48 12 5a4 4 0 0 0-8 0c0 2.48 1.597 4.506 4 4.984ZM13 5c0 2.837-1.789 5.227-4.52 5.901l.244.487a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3.177 3.177 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.244-.487C4.789 10.227 3 7.837 3 5a5 5 0 0 1 10 0Zm-6.938-.495a2.003 2.003 0 0 1 1.443-1.443C7.773 2.994 8 2.776 8 2.5c0-.276-.226-.504-.498-.459a3.003 3.003 0 0 0-2.46 2.461c-.046.272.182.498.458.498s.494-.227.562-.495Z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#fbd42c" class="bi bi-taxi-front main2-icons-left-2" viewBox="0 0 16 16">
+                <path d="M4.862 5.276 3.906 7.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17 1.247 0 2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 5H5.309a.5.5 0 0 0-.447.276ZM4 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-9 0a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"/>
+                <path d="M6 1a1 1 0 0 0-1 1v1h-.181A2.5 2.5 0 0 0 2.52 4.515l-.792 1.848a.807.807 0 0 1-.38.404c-.5.25-.855.715-.965 1.262L.05 9.708a2.5 2.5 0 0 0-.049.49v.413c0 .814.39 1.543 1 1.997V14.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1.338c1.292.048 2.745.088 4 .088s2.708-.04 4-.088V14.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1.892c.61-.454 1-1.183 1-1.997v-.413c0-.165-.016-.329-.049-.49l-.335-1.68a1.807 1.807 0 0 0-.964-1.261.807.807 0 0 1-.381-.404l-.792-1.848A2.5 2.5 0 0 0 11.181 3H11V2a1 1 0 0 0-1-1H6ZM4.819 4h6.362a1.5 1.5 0 0 1 1.379.91l.792 1.847a1.8 1.8 0 0 0 .853.904c.222.112.381.32.43.564l.336 1.679c.02.097.029.195.029.294v.413a1.48 1.48 0 0 1-1.408 1.484c-1.555.07-3.786.155-5.592.155-1.806 0-4.037-.084-5.592-.155A1.479 1.479 0 0 1 1 10.611v-.413c0-.099.01-.197.03-.294l.335-1.68a.807.807 0 0 1 .43-.563c.383-.19.685-.511.853-.904l.792-1.848A1.5 1.5 0 0 1 4.82 4Z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#fbd42c" class="bi bi-headphones" viewBox="0 0 16 16">
+                <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z"/>
+            </svg>
+        </div>
+
+        <div class="container main2-block">
+            <div class="shadow">
+                <h4 class="main2-text">
+                    ВЫБИРАЙ<br>
+                    И УЗНАВАЙ
+                </h4>
+                <div class="main2-img">
+                    <div class="main2-1">
+                        <img src="img/main2_1.jpg" alt="">
+                    </div>
+                    <div class="main2-2">
+                        <img src="img/main2_2.jpg" alt="">
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div class="main2-icons-right wow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#fbd42c" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#fbd42c" class="bi bi-easel main2-icons-right-2" viewBox="0 0 16 16">
+                <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0zM2 3v7h12V3H2z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#fbd42c" class="bi bi-journal-text" viewBox="0 0 16 16">
+                <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+            </svg>
         </div>
     </div>
 
@@ -254,8 +286,9 @@
         </div>
     </footer>
 
-    <script src="jquery-3.6.3.js"></script>
-
     <script src="bootstrap.bundle.js"></script>
+
+    <script src="wow.js"></script>
+    <script>new WOW().init();</script>
 </body>
 </html>

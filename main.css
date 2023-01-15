@@ -69,6 +69,11 @@ header {
 .header-carousel-indicators {
     padding-bottom: 30px;
 }
+.carousel-indicators-dots {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
 .main1 {
     background-color: #fff;
 }
@@ -92,6 +97,64 @@ header {
     height: 450px;
 }
 .main2 {
+    display: flex;
+    position: relative;
+}
+.main2-icons-left {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(100%, -50%);
+    z-index: 1001;
+    animation-name: anim-left;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+.main2-icons-left-2 {
+    position: relative;
+    right: 100%;
+    margin: 50% 0;
+}
+@keyframes anim-left {
+    from {
+        left: 8%;
+        opacity: 0;
+    }
+    to {
+        left: 30%;
+        opacity: 1;
+    }
+}
+.main2-icons-right {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translate(-100%, -50%);
+    z-index: 1001;
+    animation-name: anim-right;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+.main2-icons-right-2 {
+    position: relative;
+    left: 100%;
+    margin: 50% 0;
+}
+@keyframes anim-right {
+    from {
+        right: 8%;
+        opacity: 0;
+    }
+    to {
+        right: 30%;
+        opacity: 1;
+    }
+}
+.main2-block {
     position: relative;
     padding: 30px 0;
 }
